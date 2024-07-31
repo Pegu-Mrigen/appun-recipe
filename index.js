@@ -14,9 +14,7 @@ async function main() {
   );
 }
 
-app.get("/", (req, res) => {
-  res.send("Srrver wrkinh");
-});
+
 
 main()
   .then(() => console.log("Mongo connectedd"))
@@ -27,6 +25,9 @@ const CategoryRoutes = require("./src/routes/categoryRoute");
 
 app.use("/api", ItemRoutes);
 app.use("/api", CategoryRoutes);
+app.get("/", (req, res) => {
+  res.send("Srrver wrkinh");
+});
 
 app.listen(port, () => {
   console.log("serve working on port- " + `${port}`);
