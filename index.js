@@ -10,7 +10,7 @@ app.use(cors());
 
 async function main() {
   await mongoose.connect(
-    "mongodb+srv://appun123:Appun123@cluster0.hsgcv73.mongodb.net/food-recipe?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb+srv://AAppun11:AAppun11@cluster0.hsgcv73.mongodb.net/food-recipe?retryWrites=true&w=majority&appName=Cluster0"
   );
 }
 
